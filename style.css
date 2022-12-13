@@ -1,0 +1,723 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,400&display=swap");
+:root {
+  --main-color: #454446;
+  --text-color: white;
+  --bg-color: #c1bcb8;
+}
+/* For header section */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  background-color: var(--bg-color);
+}
+.nav-bar {
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.left-nav-bar {
+  color: var(--text-color);
+  font-size: 20px;
+  padding-left: 100px;
+  display: relative;
+}
+
+.right-nav-bar span a {
+  color: var(--text-color);
+  padding: 20px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+/* .left-nav-bar img {
+  width: 50px;
+  height: 50px;
+} */
+.right-nav-bar span a:hover {
+  background-color: #d0cabe;
+  color: var(--main-color);
+}
+
+/* For Cover image section */
+.cover {
+  position: relative;
+  width: 100%;
+  min-height: 580px;
+  display: flex;
+  align-items: center;
+}
+
+.cover-img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  object-position: top;
+}
+.cover-text {
+  color: var(--main-color);
+  padding: 200px 0px 0px 100px;
+  line-height: 2;
+}
+.cover-text h1 {
+  font-size: 50px;
+  font-weight: 500;
+}
+.cover-text h3 {
+  font-size: 25px;
+  font-weight: 300;
+}
+.cover-text button {
+  border: none;
+  padding: 20px;
+  color: var(--text-color);
+  border-radius: 20px;
+  background-color: var(--main-color);
+  font-size: 15px;
+  transition: 0.5s;
+}
+.cover-text button:hover {
+  background-color: #2e2e2e;
+  color: var(--text-color);
+}
+/* Categories section */
+.category {
+  margin-top: 50px;
+  width: 100%;
+}
+.category-item {
+  display: flex;
+  justify-content: space-evenly;
+}
+.category h1 {
+  padding: 90px 0px 50px 0px;
+  text-align: center;
+}
+.card {
+  border: 1px solid black;
+  width: 250px;
+  height: 400px;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 150px 150px 0px 0px;
+  transition: 0.5s;
+}
+.card img {
+  width: 100%;
+  height: 300px;
+  border-radius: 150px 150px 0px 0px;
+}
+.card-footer h3,
+p {
+  text-align: center;
+  color: var(--text-color);
+  padding: 13px 20px;
+}
+.card:hover {
+  /* transition: 0.5s; */
+  box-shadow: 10px 10px 10px var(--main-color);
+}
+.card-footer {
+  transition: 0.5s;
+}
+
+/* .card-footer:hover {
+  background-color: #9d9ba0;
+} */
+
+/* about section */
+.aboutUs {
+  width: 100%;
+  padding-top: 70px;
+}
+.about {
+  height: 500px;
+  background-color: var(--bg-color);
+  display: flex;
+  padding: 70px;
+}
+.about .about-img {
+  width: 500px;
+}
+.about .about-img img {
+  width: 100%;
+  height: 100%;
+  /* padding: 30px 20px 30px 30px; */
+  border-radius: 40px;
+}
+
+.about-text {
+  width: 700px;
+  /* padding: 20px 20px 20px 0px; */
+  line-height: 1.3;
+}
+.about-text h1 {
+  text-align: center;
+  color: var(--main-color);
+  font-size: 30px;
+  margin: 10px 0px;
+}
+.about-text p {
+  color: var(--main-color);
+  font-size: 18px;
+  text-align: justify;
+  font-weight: 200;
+}
+
+/* Product Section */
+/* .product {
+  width: 100%;
+  height: 400px;
+  background-color: rebeccapurple;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+} */
+.product {
+  width: 100%;
+}
+.product h1 {
+  text-align: center;
+  color: var(--main-color);
+  font-size: 30px;
+  font-weight: 500;
+  padding: 70px 0px;
+}
+.product-item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.product-card {
+  width: 200px;
+  height: 270px;
+  border-radius: 10px;
+  transition: 0.5s;
+  margin: 10px;
+}
+.product-card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px 10px 0px 0px;
+}
+.product-footer {
+  width: 100%;
+  height: 70px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: var(--main-color);
+}
+.product-footer p {
+  line-height: 0.5;
+  font-size: 15px;
+}
+.product-card:hover {
+  box-shadow: 10px 10px 10px var(--main-color);
+}
+/* Workshop section */
+.workshop {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color);
+}
+.workshop h1 {
+  text-align: center;
+  color: var(--text-color);
+  font-size: 30px;
+  margin: 50px 0px;
+  padding: 80px 0px 0px 0px;
+}
+/* .workshop h1::before {
+  content: ";
+  width: 30px;
+  margin-bottom: 3px;
+} */
+
+.workshop-item {
+  display: flex;
+  justify-content: space-around;
+  margin: 0px 60px 20px 60px;
+  flex-wrap: wrap;
+}
+.workshop-card {
+  width: 300px;
+  height: 440px;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 20px;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s;
+  margin: 0px 10px 30px 10px;
+}
+.workshop-item-img img {
+  width: 100%;
+  height: 200px;
+  border: none;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.workshop-timetable {
+  color: var(--text-color);
+  line-height: 2;
+  text-align: center;
+  padding: 5px;
+}
+.workshop-timetable h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.workshop-timetable h4 {
+  font-size: 16px;
+  font-weight: 200;
+}
+.workshop-card:hover {
+  box-shadow: 10px 10px 10px var(--main-color);
+}
+.workshop-timetable button {
+  width: 75%;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.workshop-timetable button:hover {
+  background-color: #77737c;
+  color: var(--text-color);
+}
+/* 
+Gallery section */
+.gallery {
+  width: 100%;
+  padding: 70px 0px 30px 0px;
+}
+.gallery-pic {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 50px 30px 50px;
+}
+.gallery h1 {
+  color: var(--main-color);
+  font-size: 30px;
+  text-align: center;
+}
+.gallery img {
+  width: 250px;
+  height: 250px;
+  padding: 4px;
+  border: none;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+/* Contact section */
+
+.contact {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color);
+}
+.contact-section {
+  max-width: 1100px;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  gap: 1rem;
+}
+.map iframe {
+  width: 100%;
+  height: 400px;
+  width: 100%;
+  margin: 50px 30px 30px 0px;
+  border: none;
+  border-radius: 30px;
+}
+.text-contact {
+  width: 100%;
+  height: 300px;
+  margin: 50px 30px 30px 0px;
+}
+.text-contact h2 {
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: 300;
+}
+.text-contact p {
+  color: var(--main-color);
+  font-size: 16px;
+  text-align: left;
+  line-height: 1;
+}
+.address {
+  padding-bottom: 20px;
+}
+.socialmedia {
+  padding: 10px;
+  font-size: 30px;
+  color: var(--main-color);
+}
+.contact-form {
+  width: 100%;
+  padding: 20px;
+  margin: 50px 20px 50px 10px;
+}
+.contact .contact-form h1 {
+  font-size: 25px;
+  color: var(--main-color);
+  font-weight: 500;
+}
+.contact .contact-form input {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  border-bottom: 1px solid var(--main-color);
+  margin: 5px;
+  background-color: var(--bg-color);
+}
+.contact-form button {
+  border: none;
+  border-radius: 15px;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  padding: 18px;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+.contact-form button:hover {
+  background-color: #272726;
+  color: var(--text-color);
+}
+/* Footer section */
+.footer {
+  width: 100%;
+  padding: 10px;
+  color: var(--text-color);
+  background-color: var(--main-color);
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.footer p {
+  font-size: 16px;
+  font-weight: 200;
+}
+.footer a {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  font-size: 45px;
+  padding-right: 10px;
+  color: #d1a26e;
+  transition: 0.5s;
+}
+.footer a:hover {
+  font-size: 50px;
+  color: #af6f42;
+}
+
+/* ----Responsive--------  */
+@media (max-width: 1110px) {
+  .contact-section {
+    padding: 20px;
+  }
+}
+@media (max-width: 1010px) {
+  .left-nav-bar {
+    padding-left: 50px;
+  }
+  .right-nav-bar span a {
+    font-size: 16px;
+    padding: 20px 10px;
+  }
+  .category-item .card {
+    width: 230px;
+    height: 360px;
+  }
+  .category-item .card img {
+    height: 260px;
+  }
+}
+@media (max-width: 940px) {
+  .about-text h1 {
+    font-size: 20px;
+  }
+  .about-text p {
+    font-size: 16px;
+  }
+  .about {
+    padding: 50px;
+  }
+  .about {
+    height: 450px;
+  }
+  .map iframe {
+    height: 350px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 845px) {
+  .product h1 {
+    padding: 70px 0px 40px 0px;
+  }
+}
+@media (max-width: 850px) {
+  .gallery-pic img {
+    width: 230px;
+    height: 230px;
+  }
+}
+@media (max-width: 824px) {
+  .right-nav-bar span a {
+    display: none;
+  }
+  .left-nav-bar {
+    padding-left: 45%;
+  }
+  .category-item .card {
+    width: 210px;
+    height: 320px;
+  }
+  .category-item .card img {
+    height: 220px;
+  }
+  .category h1 {
+    padding: 50px 0px 30px 0px;
+  }
+  .cover-text h1 {
+    font-size: 40px;
+    padding-top: 60px;
+  }
+  .cover-text h3 {
+    font-size: 18px;
+  }
+  .cover-text button {
+    padding: 18px;
+    font-size: 13px;
+    margin-bottom: 60px;
+  }
+  .about-text h1 {
+    font-size: 18px;
+  }
+  .about-text p {
+    font-size: 14px;
+  }
+  .about-img img {
+    width: 400px;
+  }
+  .about {
+    height: 400px;
+  }
+  .about {
+    padding: 30px;
+  }
+  .gallery-pic img {
+    width: 210px;
+    height: 210px;
+  }
+  .category h1,
+  .product h1,
+  .workshop h1,
+  .gallery h1,
+  .contact-section address h2,
+  .contact-section .phoneNumber h2,
+  .contact-section .contact-form h1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 821px) {
+  .contact-form {
+    width: 500px;
+    padding: 0px 50px;
+    margin: 0px 70px;
+  }
+}
+@media (max-width: 690px) {
+  .category-item {
+    flex-wrap: wrap;
+  }
+  .category-item .card {
+    margin-top: 30px;
+  }
+  .contact-form {
+    width: 450px;
+    padding: 0px 40px;
+    margin: 0px 70px 0px 40px;
+  }
+}
+@media (max-width: 620px) {
+  .cover .cover-text h3 {
+    padding-right: 40px;
+  }
+  .cover .cover-text h1 {
+    padding-right: 40px;
+  }
+  .left-nav-bar {
+    padding-left: 40%;
+  }
+  .about {
+    height: 300px;
+    padding: 20px;
+  }
+  .about-img {
+    width: 300px;
+  }
+  .about-text h1 {
+    font-size: 18px;
+    margin: 2px 0px;
+  }
+  .about-text p {
+    line-height: 0.9;
+    font-size: 14px;
+  }
+  .contact-form {
+    width: 400px;
+    padding: 0px 40px;
+    margin: 0px 40px 0px 40px;
+  }
+}
+@media (max-width: 620px) {
+  .about-img {
+    display: none;
+  }
+  .about-text {
+    width: 100%;
+  }
+  .contact-form {
+    width: 400px;
+    padding: 0px 40px;
+    margin: 0px 0px 0px 40px;
+  }
+  .footer {
+    font-size: 14px;
+  }
+}
+@media (max-width: 496px) {
+  .contact-form {
+    width: 400px;
+    padding: 0px 40px;
+    margin: 0px;
+  }
+}
+@media (max-width: 555px) {
+  .text-contact {
+    /* margin: 0px 50px 40px 50px; */
+    padding: 0px 30px 30px 30px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 432px) {
+  .contact-form {
+    width: 380px;
+    padding: 0px 20px;
+    margin: 0px;
+  }
+  .cover .cover-text h1 {
+    font-size: 26px;
+  }
+  .left-nav-bar {
+    padding-left: 30%;
+  }
+}
+@media (max-width: 410px) {
+  .workshop-card .workshop-item-img {
+    height: 180px;
+  }
+  .workshop-item-img img {
+    height: 180px;
+  }
+  .workshop-card .workshop-timetable h3 {
+    font-size: 16px;
+  }
+  .workshop-card .workshop-timetable h4 {
+    font-size: 14px;
+  }
+  .workshop-card .workshop-timetable button {
+    padding: 7px;
+    font-size: 13px;
+    border-radius: 18px;
+  }
+  .workshop-card {
+    height: 380px;
+  }
+  .contact-form {
+    width: 300px;
+    padding: 0px;
+    margin: 20px;
+  }
+}
+@media (max-width: 405px) {
+  .about {
+    padding: 3px;
+  }
+  .workshop h1 {
+    margin: 30px 0px;
+    padding: 30px 0px 0px 0px;
+  }
+}
+@media (max-width: 375px) {
+  .contact-form {
+    width: 300px;
+    padding: 0px;
+    margin: 10px;
+  }
+  .contact-form form input {
+    padding: 12px;
+  }
+  .footer {
+    font-size: 14px;
+  }
+}
+@media (max-width: 360px) {
+  .left-nav-bar {
+    padding-left: 30%;
+  }
+  .cover .cover-text h3 {
+    font-size: 15px;
+  }
+  .cover .cover-text h1 {
+    font-size: 22px;
+  }
+  .workshop-card .workshop-item-img {
+    height: 160px;
+  }
+  .workshop-item-img img {
+    height: 160px;
+  }
+  .workshop .workshop-timetable h3 {
+    font-size: 14px;
+  }
+  .workshop .workshop-timetable h3 {
+    font-size: 12px;
+  }
+  .workshop-card {
+    height: 350px;
+  }
+}
+@media (max-width: 345px) {
+  .contact-section .contact-form {
+    width: 260px;
+    margin: 30px 10px 10px 10px;
+    padding: 5px;
+  }
+}
